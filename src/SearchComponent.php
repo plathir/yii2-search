@@ -73,11 +73,13 @@ class SearchComponent extends Component
 
             if($ar instanceof SearchInterface && $ar instanceof ActiveRecordInterface) {
                 $searchFields = $ar->getSearchFields();
+                $filter = $ar->getFiler();
                 $dbQuery = $ar::find();
 
                 foreach($searchFields as $field) {
                     if($ar->hasAttribute($field)) {
                         $dbQuery->orWhere(['like', $field, $query]);
+                        $dbQuery->andFilterWhere( $filter );
                     } else {
                         $message = sprintf("Field `%s` not found in `%s` model", $field, $ar);
                         throw new Exception($message);

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://github.com/Vintage-web-production/yii2-search
  * @copyright Copyright (c) 2017 Vintage Web Production
@@ -16,8 +17,8 @@ namespace vintage\search\interfaces;
  * @author Vladimir Kuprienko <vldmr.kuprienko@gmail.com>
  * @since 1.0
  */
-interface SearchInterface
-{
+interface SearchInterface {
+
     /**
      * Getting title
      *
@@ -47,4 +48,10 @@ interface SearchInterface
      * where will be implemented search in model
      */
     public function getSearchFields();
+
+    /**
+     * @return array[] of filter
+     */
+    
+    public function getFilter();
 }
