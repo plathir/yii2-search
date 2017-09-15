@@ -21,6 +21,7 @@
       "url": "https://asset-packagist.org"
     }
   ],
+  "minimum-stability": "dev",
   "require": {
     "yiisoft/yii2": "^2.0.0"
   },
