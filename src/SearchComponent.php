@@ -73,7 +73,9 @@ class SearchComponent extends Component
 
             if($ar instanceof SearchInterface && $ar instanceof ActiveRecordInterface) {
                 $searchFields = $ar->getSearchFields();
-                $filter = $ar->getFiler();
+                
+                $filter = $ar->getFilter();  
+                
                 $dbQuery = $ar::find();
 
                 foreach($searchFields as $field) {
