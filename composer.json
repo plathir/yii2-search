@@ -1,39 +1,39 @@
 {
-    "name": "plathir/yii2-search",
-    "description": "Search in Active Record models for Yii2",
-    "keywords": ["yii2", "component", "search", "active record"],
-    "type": "yii2-extension",
-    "license": "BSD-3-Clause",
-    "support": {
-        "source": "https://github.com/Vintage-web-production/yii2-search",
-        "issues": "https://github.com/Vintage-web-production/yii2-search/issues"
-    },
-    "authors": [
-        {
-            "name": "Vladimir Kuprienko",
-            "email": "vldmr.kuprienko@gmail.com",
-            "role": "developer"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "yiisoft/yii2": "^2.0.0"
-    },
-    "require-dev": {
-        "codeception/codeception": "~2.3",
-        "codeception/verify": "*",
-        "codeception/specify": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "plathir\\search\\": "src",
-            "plathir\\search\\tests\\": "tests"
-        }
+  "name": "vintage/yii2-search",
+  "description": "Search in Active Record models for Yii2",
+  "keywords": ["yii2", "component", "search", "active record"],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "support": {
+    "source": "https://github.com/Vintage-web-production/yii2-search",
+    "issues": "https://github.com/Vintage-web-production/yii2-search/issues"
+  },
+  "authors": [
+    {
+      "name": "Vladimir Kuprienko",
+      "email": "vldmr.kuprienko@gmail.com",
+      "role": "developer"
     }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": "^2.0.0"
+  },
+  "require-dev": {
+    "codeception/codeception": "~2.3",
+    "codeception/verify": "*",
+    "codeception/specify": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "vintage\\search\\": "src",
+      "vintage\\search\\tests\\": "tests"
+    }
+  }
 }
