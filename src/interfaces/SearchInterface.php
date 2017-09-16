@@ -54,4 +54,8 @@ interface SearchInterface {
      */
     
     public function getFilter();
+    /**
+     * return string
+     */
+    public function getModuleName();
 }

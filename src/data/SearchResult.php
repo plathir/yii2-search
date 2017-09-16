@@ -43,6 +43,12 @@ class SearchResult extends Object
      * @var string
      */
     public $modelName;
+    
+    /**
+     *
+     * @var string 
+     */
+    public $moduleName;
 
 
     /**
@@ -59,6 +65,7 @@ class SearchResult extends Object
             'title'         => $modelObject->getSearchTitle(),
             'description'   => $modelObject->getSearchDescription(),
             'url'           => $modelObject->getSearchUrl(),
+            'moduleName'    => $modelObject->getModuleName(),
         ]);
     }
 
@@ -77,7 +84,8 @@ class SearchResult extends Object
                 'modelName'     => $object::className(),
                 'title'         => $object->getSearchTitle(),
                 'description'   => $object->getSearchDescription(),
-                'url'           => $object->getSearchUrl()
+                'url'           => $object->getSearchUrl(),
+                'moduleName'    => $object->getModuleName(),
             ]);
         }
 
