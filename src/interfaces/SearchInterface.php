@@ -58,4 +58,9 @@ interface SearchInterface {
      * return string
      */
     public function getModuleName();
+    
+    /**
+     * 
+     */
+    public function getJoinWith();
 }
