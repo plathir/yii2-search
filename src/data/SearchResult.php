@@ -21,7 +21,7 @@ use vintage\search\interfaces\SearchInterface;
  * @author Vladimir Kuprienko <vldmr.kuprienko@gmail.com>
  * @since 1.0
  */
-class SearchResult extends Object
+class SearchResult extends BaseObject
 {
     /**
      * @var string
