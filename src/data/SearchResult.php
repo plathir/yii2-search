@@ -7,7 +7,7 @@
 
 namespace vintage\search\data;
 
-use yii\base\Object;
+use yii\base\BaseObject;
 use yii\db\BaseActiveRecord;
 use vintage\search\interfaces\SearchInterface;
 
